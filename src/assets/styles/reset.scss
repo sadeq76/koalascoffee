@@ -1,0 +1,166 @@
+@font-face {
+  font-family: "iransans2";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/IRANSansDN_FaNum-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "iransans2";
+  font-style: normal;
+  font-weight: lighter;
+  src: url("../fonts/IRANSansDN_FaNum_Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "iransans2";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/IRANSansDN_Fa_Num.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "iransans";
+  font-style: normal;
+  font-weight: bolder;
+  src: url("../fonts/IRANSans\(FaNum\)_Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "iransans";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/IRANSans\(FaNum\)_Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "iransans";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/IRANSans\(FaNum\)_Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "iransans";
+  font-style: normal;
+  font-weight: lighter;
+  src: url("../fonts/IRANSans\(FaNum\)_Light.ttf") format("truetype");
+}
+
+:root {
+  font-size: 16px;
+  @media only screen and (min-width: 900px) {
+    font-size: 24px;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  line-height: 1.5em;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body {
+  font-family: "iransans";
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+//headers
+h {
+  &1 {
+    font-size: 1.25rem;
+    font-weight: 900;
+  }
+  &2 {
+    font-size: 1.125rem;
+    font-weight: 800;
+  }
+  &3 {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  &4 {
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+  &5 {
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+  &6 {
+    font-size: 0.625rem;
+    font-weight: 400;
+  }
+}
+
+p {
+  font-size: 0.875rem;
+  font-weight: normal;
+}
+
+summary {
+  cursor: pointer;
+}
+
+summary > * {
+  display: inline;
+}
+
+//btns
+button {
+  border: none;
+  font-family: "iransans";
+  font-style: normal;
+  font-weight: 700;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  background-color: transparent;
+  cursor: pointer;
+}
+button:active {
+  text-shadow: 1px 1px 10px $light-color;
+  color: $dark-color;
+}
+
+//text fields
+input {
+  font-family: "iransans";
+}
+textarea {
+  font-family: "iransans";
+  background-color: transparent;
+  outline: none;
+  border: solid 1px $primary-color;
+  opacity: 0.5;
+  font-size: 1rem;
+  color: $dark-color;
+  height: 200px;
+}
+textarea:focus {
+  opacity: 1;
+}
+textarea::placeholder {
+  color: $primary-color;
+  font-weight: 500;
+}
+
+dialog {
+  border: none;
+  border-radius: 0.5em;
+  box-shadow: $shadow;
+}
+
+.router-link-active {
+  opacity: 50%;
+}
